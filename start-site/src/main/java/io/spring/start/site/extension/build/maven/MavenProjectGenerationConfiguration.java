@@ -37,4 +37,17 @@ class MavenProjectGenerationConfiguration {
 		return new MavenBuildSystemHelpDocumentCustomizer(description);
 	}
 
+	@Bean
+	public MavenComplierPluginCustomizer mavenComplierPluginCustomizer(
+			ProjectDescription description) {
+		return new MavenComplierPluginCustomizer(description);
+	}
+
+
+	@Bean
+	public MavenRepositoryCustomizer mavenRepositoryCustomizer(
+			ProjectDescription description) {
+		return new MavenRepositoryCustomizer(description);
+	}
+
 }

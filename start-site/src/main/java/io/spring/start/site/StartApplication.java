@@ -67,7 +67,7 @@ public class StartApplication {
 		};
 	}
 
-	@Bean
+//	@Bean
 	public SaganInitializrMetadataUpdateStrategy initializrMetadataUpdateStrategy(
 			RestTemplateBuilder restTemplateBuilder, ObjectMapper objectMapper) {
 		return new SaganInitializrMetadataUpdateStrategy(restTemplateBuilder.build(), objectMapper);
